@@ -95,7 +95,7 @@ func (ctx *SigningContext) constructSignedInfo(el *etree.Element, enveloped bool
 		return nil, errors.New("Missing data ID")
 	}
 
-	reference.CreateAttr(URIAttr, "#"+dataId)
+	//reference.CreateAttr(URIAttr, "#"+dataId)
 
 	// /SignedInfo/Reference/Transforms
 	transforms := ctx.createNamespacedElement(reference, TransformsTag)
